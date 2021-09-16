@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Imersão Dev Alura</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <div id="container">
+        <section id="header">
+            <a href="file:///home/leonardo/Estudo/imersao-dev-alura/index.html">
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                    class="page-logo" alt="">
+            </a>
+            <div class="title-box">
+                <h4>
+                    Grade's Calculator
+                </h4>
+                <p>
+                    Find out what your grade point average is for all your exams!
+                </p>
+            </div>
+        </section>
+        <section id="content">
+            <form>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <label>Grade 1</label>
+                        <input type="number" id="grade1" name="grade1" onfocusout="focusOutInput('grade1')">
+                        <p class="grade1 error-message">This field is required</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label>Grade 2</label>
+                        <input type="number" id="grade2" name="grade2" onfocusout="focusOutInput('grade2')">
+                        <p class="grade2 error-message">This field is required</p>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4">
+                        <label>Grade 3</label>
+                        <input type="number" id="grade3" name="grade3" onfocusout="focusOutInput('grade3')">
+                        <p class="grade3 error-message">This field is required</p>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4">
+                        <label>Grade 4</label>
+                        <input type="number" id="grade4" name="grade4" onfocusout="focusOutInput('grade4')">
+                        <p class="grade4 error-message">This field is required</p>
+                    </div>
+                    <div class="col-12 mt-5 text-center">
+                        <button type="submit" onclick="calculateGrades(event)">Calculate</button>
+                    </div>
+                </div>
+            </form>
+            <div id="result" class="row mt-5">
+                <p>Result: <i id="gradesResult"></i></p>
+            </div>
+        </section>
+        <section id="footer">
+            <p>Developed with 🧡 by <a href="https://github.com/SchmitLeonardo">Leonardo Schmidt Borges</a></p>
+        </section>
+    </div>
+</body>
+
+</html>
