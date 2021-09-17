@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Imersão Dev Alura - Day 2</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <div id="container">
+        <section id="header">
+            <a href="https://schmitleonardo.github.io/imersao-dev/index.html">
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                    class="page-logo" alt="">
+            </a>
+            <div class="title-box">
+                <h4>
+                    Currency Converter
+                </h4>
+                <p>
+                    Fill in the field below with some amount in real (R$) to see the currency conversion!
+                </p>
+            </div>
+        </section>
+        <section id="content">
+            <form>
+                <div class="row">
+                    <div class="col-12">
+                        <label>Value (R$)</label>
+                        <input type="number" id="value" name="value" onkeyup="keyupInput()">
+                    </div>
+                    <div class="col-12 mt-5 text-center">
+                        <button id="Button" type="submit" disabled onclick="calculateCurrency(event)">Convert</button>
+                    </div>
+                </div>
+            </form>
+            <div id="result" class="row mt-5">
+                <div class="result-table">
+                    <h5 class="mb-3">Currency Conversion Results:</h5>
+                    <p>Dolar: R$<i id="dolarResult"></i>,00</p>
+                    <p>Euro: R$<i id="euroResult"></i>,00</p>
+                    <p>Libra: R$<i id="libraResult"></i>,00</p>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <p>Developed with 🧡 by <a href="https://github.com/SchmitLeonardo">Leonardo Schmidt Borges</a></p>
+        </section>
+    </div>
+</body>
+
+</html>
