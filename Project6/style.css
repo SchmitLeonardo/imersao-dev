@@ -1,0 +1,151 @@
+:root {
+  /* Background colors */
+  --bg-dark-mode: #1d2025;
+  --brown-deep: #4e4543;
+  --brown-bg: #2e2e2e;
+  --grey-bg: #353432;
+
+  /* Font & Details colors */
+  --white: #fff;
+  --black: #000;
+  --grey: #c2c2c2;
+  --salmon: #edc298;
+  --salmon-unavaible: #9e8065;
+  --acqua: #1bddcb;
+  --yellow: #FFC400;
+
+  /* General Action colors */
+  --correct: #00897B;
+  --error: #C62828;
+  --help: #673AB7;
+  --warning: #FFAB00;
+
+  /* Shades of grey */
+  --cool-grey-50: #f5f7fa;
+  --cool-grey-100: #e4e7eb;
+  --cool-grey-200: #cbd2d9;
+  --cool-grey-300: #9aa5b1;
+  --cool-grey-400: #7b8794;
+  --cool-grey-500: #616e7c;
+  --cool-grey-600: #52606d;
+  --cool-grey-700: #3e4c59;
+  --cool-grey-800: #323f4b;
+  --cool-grey-900: #1f2933;
+}
+
+* {
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png");
+  background-color: #111;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+table {
+  margin-top: 40px;
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: white;
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+}
+
+#actions {
+  margin: 30px;
+}
+
+.item {
+  background-color: #111;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+ /* Alert Component */
+ @keyframes slide-right {
+  0% {
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.alert {
+  width: 240px;
+  margin-top: 40px;
+  background-color: var(--cool-grey-800);
+  color: var(--white);
+}
+
+#alert-correct {
+  position: absolute;
+  top: 60%;
+  right: 0px;
+  border-top: 5px solid var(--correct);
+  border-left: 2px solid var(--cool-grey-600);
+  border-bottom: 2px solid var(--cool-grey-600);
+  display: none;
+  animation-name: slide-right;
+  animation-duration: 1s;
+}
+
+#alert-error {
+  position: absolute;
+  top: 60%;
+  right: 0px;
+  border-top: 5px solid var(--error);
+  border-left: 2px solid var(--cool-grey-600);
+  border-bottom: 2px solid var(--cool-grey-600);
+  display: none;
+  animation-name: slide-right;
+  animation-duration: 1s;
+}
