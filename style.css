@@ -64,8 +64,8 @@ li {
   position: relative;
 }
 
-/* Header Component */
-#header {
+/* Logo Component */
+#logo {
   width: 100%;
   padding: 40px 0px 10px 0px;
   display: flex;
@@ -74,21 +74,88 @@ li {
   text-align: center;
 }
 
-#header a {
+#logo a {
   text-decoration: none;
   color: #000;
 }
 
-#header .page-logo {
+#logo .page-logo {
   width: 300px;
 }
 
+/* Header Component */
+#header {
+  width: 90%;
+  margin: 10px 0px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--grey-bg);
+  border-bottom: 2px solid var(--deep-yellow);
+}
+
+#header .image  {
+  height: 100px;
+  width: 100px;
+  border-radius: 60px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .image img {
+  height: 140px;
+}
+
+#header .description {
+  line-height: .8;
+}
+
+#header .description p:nth-child(2) {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+#header .description p:first-child {
+  font-size: 16px;
+  color: var(--deep-yellow);
+}
+
+#header .description p:nth-child(3) {
+  font-size: 16px;
+}
+
+@media (max-width: 600px)
+{
+  #header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #header .image  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* Main Content Component */
 #content {
-  min-height: 80vh;
+  min-height: 60vh;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--grey-bg);
+}
+
+#content .title {
+  font-size: 24px;
 }
 
 #content .item {
