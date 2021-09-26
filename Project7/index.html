@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Imersão Dev Alura - Day 6</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <div id="container">
+        <section id="header">
+            <a href="https://schmitleonardo.github.io/imersao-dev/index.html">
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                    class="page-logo" alt="">
+            </a>
+            <div class="title-box">
+                <h4>
+                    Super Trump
+                </h4>
+                <p>
+                    "Draw a card and see if you can beat your enemy! Let the games begin!"
+                </p>
+            </div>
+        </section>
+        <section id="content">
+            <button id="btn-sort" onclick="sortCards()">Draw a Card</button>
+            <h4 id="options-title">Choose your strongest attribute</h4>
+            <div id="options" class="row"></div>
+            <button id="btn-play" onClick="play()">Play</button>
+            <div id="result"></div>
+        </section>
+        <section id="footer">
+            <p>Developed with 🧡 by <a href="https://github.com/SchmitLeonardo">Leonardo Schmidt Borges</a></p>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
